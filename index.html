@@ -82,7 +82,7 @@
 
 		<!-- Imagem Kamilla -->
 
-		<img id="foto_kamilla" style="width: 100%; margin: 1rem;" src="img/background_768px.png" alt="Foto Dra. Kamilla Jhéssica"> 
+		<img id="foto_kamilla" style="width: 70%; margin: 1rem;" src="img/background_768px.png" alt="Foto Dra. Kamilla Jhéssica"> 
 
 		        <!--================Welcome Area =================-->
 				<section id="about" class="welcome_area p_120">
@@ -274,33 +274,27 @@
         </section>
         <!--================End Latest Blog Area =================-->
         
-        <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
-        	<div class="container">
-        		<div class="row footer_inner">
-        			<div class="col-lg-5 col-sm-6">
-        				<aside class="f_widget ab_widget">
-        					<p> Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Este site foi feito com <i class="fa fa-heart-o" aria-hidden="true"></i> por <a href="https://www.instagram.com/techsocius.bsb/" target="_blank">Tech Socius</a></p>
-        				</aside>
-        			</div>
-        			<div class="col-lg-2">
-        				<aside class="f_widget social_widget">
-        					<div class="f_title">
-        						<h3>redes sociais</h3>
-        					</div>
-        					<ul class="list">
-        						<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-        						<li><a target="_blank" href="https://www.instagram.com/drakamillajhessica/"><i class="fa fa-instagram"></i></a></li>
-        						<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-        						<li><a href="#"><i class="fa fa-behance"></i></a></li>
-        					</ul>
-        				</aside>
-        			</div>
-        		</div>
-        	</div>
-        </footer>
-        <!--================End Footer Area =================-->
-        
+       
+
+
+		<!--================Botão Flutuante =================-->
+		<div id="social-btn-group">
+			<button id="toggle-btn">
+				<img src="img/social-media.png" alt="Redes Sociais">
+			</button>
+			<div id="social-btns">
+				<a href="https://wa.me/5561981643687?text=Ol%C3%A1%20Dra.%20Kamilla!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" aria-label="WhatsApp">
+					<img src="img/whatsapp.png" alt="WhatsApp">
+				</a>
+				<a href="https://www.instagram.com/drakamillajhessica/" target="_blank" aria-label="Instagram">
+					<img src="img/instagram.png" alt="Instagram">
+				</a>
+				<a href="https://www.facebook.com/share/RfKvtFGSN6co7zDw/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
+					<img src="img/facebook.png" alt="Facebook">
+				</a>
+			</div>
+		</div>
+        <!--================Final =================-->
         
         
         
@@ -324,5 +318,58 @@
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
         <script src="js/gmaps.min.js"></script>
         <script src="js/theme.js"></script>
+
+
+		<!--================Botão Flutuante =================-->
+		<script>
+			 
+        // Função para mostrar/ocultar o botão flutuante e agrupar botões sociais
+        function handleScroll() {
+            const btnGroup = document.getElementById("social-btn-group");
+            const socialBtns = document.getElementById("social-btns");
+            const toggleBtn = document.getElementById("toggle-btn");
+
+            // Mostrar o botão flutuante e ocultar os botões sociais se rolar para cima
+            if (window.scrollY > 200) {
+                btnGroup.style.display = "block";
+                // Mostrar o botão principal e esconder os botões sociais se rolado para baixo
+                if (socialBtns.style.display === "block") {
+                    btnGroup.classList.add('show-social-btns');
+                }
+            } else {
+                btnGroup.style.display = "none";
+                socialBtns.style.display = "none";
+                btnGroup.classList.remove('show-social-btns');
+            }
+        }
+
+        // Mostrar o botão flutuante quando o usuário descer 200px
+        window.addEventListener("scroll", handleScroll);
+
+        // Exibir ou esconder os botões sociais e esconder o botão principal ao clicar
+        document.getElementById("toggle-btn").addEventListener("click", function() {
+            const socialBtns = document.getElementById("social-btns");
+            const btnGroup = document.getElementById("social-btn-group");
+
+            if (socialBtns.style.display === "block") {
+                socialBtns.style.display = "none"; // Esconde os botões sociais
+                btnGroup.classList.remove('show-social-btns');
+            } else {
+                socialBtns.style.display = "block"; // Mostra os botões sociais
+                btnGroup.classList.add('show-social-btns');
+            }
+        });
+
+        // Fechar a seção de botões sociais ao clicar em qualquer lugar da tela
+        document.addEventListener("click", function(event) {
+            const socialBtns = document.getElementById("social-btns");
+            const btnGroup = document.getElementById("social-btn-group");
+
+            if (socialBtns.style.display === "block" && !btnGroup.contains(event.target)) {
+                socialBtns.style.display = "none"; // Esconde os botões sociais
+                btnGroup.classList.remove('show-social-btns');
+            }
+        });
+		</script>
     </body>
 </html>

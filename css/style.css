@@ -3001,7 +3001,9 @@ h6 {
 ============================================================================================ */
 .footer_area {
   background-image: linear-gradient(to right, #23243A 0%, 
-  #434052 48%, #565368 100%); }
+  #434052 48%, #565368 100%); 
+  height: 20rem;}
+  
 
 .f_title {
   margin-bottom: 35px; }
@@ -3084,7 +3086,8 @@ h6 {
   margin-bottom: 10px; }
 .social_widget .list li {
   margin-right: 17px;
-  display: inline-block; }
+  display: inline-block;
+  margin-bottom: 2rem; }
   .social_widget .list li a {
     color: #cccccc;
     font-size: 14px;
@@ -3105,3 +3108,57 @@ h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+#social-btn-group {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+#toggle-btn {
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease; /* Transição suave para o botão principal */
+}
+
+#toggle-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+#social-btns {
+  display: none;
+  margin-top: 50px;
+  text-align: center;
+  transition: opacity 0.3s ease; /* Transição suave para os botões sociais */
+}
+
+#social-btns a {
+  display: block;
+  margin: 5px 0;
+}
+
+#social-btns img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s ease;
+}
+
+#social-btns img:hover {
+  transform: scale(1.2);
+}
+
+/* Estilo para quando os botões sociais estão visíveis */
+.show-social-btns #toggle-btn {
+  opacity: 0; /* Esconde o botão principal */
+}
+
+.show-social-btns #social-btns {
+  display: block; /* Mostra os botões sociais */
+  opacity: 1; /* Garantir que os botões sociais sejam visíveis */
+}
