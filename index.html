@@ -56,7 +56,7 @@
         <!--================Header Menu Area =================-->
         
         <!--================Home Banner Area =================-->
-        <section class="home_banner_area">
+        <section id="home" class="home_banner_area">
             <div class="banner_inner">
 				<div class="container">
 					<div class="row">
@@ -273,9 +273,74 @@
         	</div>
         </section>
         <!--================End Latest Blog Area =================-->
-        
-       
 
+
+
+		<!--================Footer =================-->
+
+		<footer>
+			<div class="footer-container">
+				<!-- Coluna 1: Informações de Contato -->
+				<div class="footer-column">
+					<h3>Contato</h3>
+					<p>Endereço: Rua Exemplo, 123</p>
+					<p>Telefone: (61) 98164-3687</p>
+					<p>E-mail: kamillajhessica@hotmail.com</p>
+					<p>Horário: Seg-Sex, 9h - 18h</p>
+				</div>
+	
+				<!-- Coluna 2: Links para Redes Sociais -->
+				<div class="footer-column">
+					<h3>Siga-me</h3>
+					<a href="https://www.linkedin.com/in/kamilla-jh%C3%A9ssica-de-faria-costa-43a8b5232/" target="_blank" aria-label="LinkedIn">
+						<img src="img/linkedin.png" alt="LinkedIn">
+					</a>
+					<a href="https://www.instagram.com/drakamillajhessica/" target="_blank" aria-label="Instagram">
+						<img src="img/instagram.png" alt="Instagram">
+					</a>
+					<a href="https://wa.me/5561981643687?text=Ol%C3%A1%20Dra.%20Kamilla!%20Gostaria%20de%20agendar%20uma%20consulta." target="_blank" aria-label="WhatsApp">
+						<img src="img/whatsapp.png" alt="Facebook">
+					</a>
+					<a href="https://www.facebook.com/share/RfKvtFGSN6co7zDw/?mibextid=LQQJ4d" target="_blank" aria-label="Twitter">
+						<img src="img/facebook.png" alt="Facebook">
+					</a>
+				</div>
+	
+				<!-- Coluna 3: Menu de Navegação Secundário -->
+				<div class="footer-column">
+					<h3>Navegação</h3>
+					<a href="#home">Início</a>
+					<a href="#about">Sobre</a>
+					<a href="#services">Serviços</a>
+					<a href="#news">Notícias</a>
+				</div>
+	
+				<!-- Coluna 4: Logo e Identidade Visual -->
+				<div class="footer-column">
+					<img style="width: 5rem; height: 5rem; border-radius: 10px;" src="img/logo_kamilla.jpg" alt="Logo" class="footer-logo">
+					<p>"Transformar vidas através do sorriso."</p>
+				</div>
+	
+				<!-- Coluna 5: Certificações e Afiliações -->
+				<div class="footer-column">
+					<h3>Certificações</h3>
+					<p>Cirurgiã-dentista</p>
+					<p>Ortodontista</p>
+					<p>Facetas em Resina</p>
+					<p>Clareamento</p>
+				</div>
+			</div>
+	
+			<!-- Botão de Voltar ao Topo -->
+			<a href="#" class="back-to-top" aria-label="Voltar ao topo"></a>
+	
+			<!-- Informações de Copyright e Avisos Legais -->
+			<div class="footer-bottom">
+				<p>&copy; 2024 Kamilla Jhéssica de Faria. Todos os direitos reservados.</p>
+				<p>Design por Tech Socius BSB.</p>
+			</div>
+		</footer>
+		<!--================End Footer =================-->
 
 		<!--================Botão Flutuante =================-->
 		<div id="social-btn-group">
@@ -289,9 +354,7 @@
 				<a href="https://www.instagram.com/drakamillajhessica/" target="_blank" aria-label="Instagram">
 					<img src="img/instagram.png" alt="Instagram">
 				</a>
-				<a href="https://www.facebook.com/share/RfKvtFGSN6co7zDw/?mibextid=LQQJ4d" target="_blank" aria-label="Facebook">
-					<img src="img/facebook.png" alt="Facebook">
-				</a>
+				<button id="close-btn" aria-label="Fechar">&#10005;</button>
 			</div>
 		</div>
         <!--================Final =================-->
@@ -327,12 +390,9 @@
         function handleScroll() {
             const btnGroup = document.getElementById("social-btn-group");
             const socialBtns = document.getElementById("social-btns");
-            const toggleBtn = document.getElementById("toggle-btn");
 
-            // Mostrar o botão flutuante e ocultar os botões sociais se rolar para cima
             if (window.scrollY > 200) {
                 btnGroup.style.display = "block";
-                // Mostrar o botão principal e esconder os botões sociais se rolado para baixo
                 if (socialBtns.style.display === "block") {
                     btnGroup.classList.add('show-social-btns');
                 }
@@ -358,6 +418,15 @@
                 socialBtns.style.display = "block"; // Mostra os botões sociais
                 btnGroup.classList.add('show-social-btns');
             }
+        });
+
+        // Fechar a seção de botões sociais ao clicar no botão "X"
+        document.getElementById("close-btn").addEventListener("click", function() {
+            const socialBtns = document.getElementById("social-btns");
+            const btnGroup = document.getElementById("social-btn-group");
+
+            socialBtns.style.display = "none"; // Esconde os botões sociais
+            btnGroup.classList.remove('show-social-btns');
         });
 
         // Fechar a seção de botões sociais ao clicar em qualquer lugar da tela
