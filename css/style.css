@@ -3106,12 +3106,12 @@ h6 {
 
 #social-btns a {
   display: block;
-  margin: 5px 0;
+  margin: 20px 0;
 }
 
 #social-btns img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   transition: transform 0.3s ease;
 }
 
