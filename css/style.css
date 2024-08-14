@@ -302,10 +302,16 @@ button:focus {
   #title-logo {
     color: white;
   }
+  .nav-link {
+    color: #222338;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   #title-logo {
+    color: #222338;
+  }
+  #nav-item-link {
     color: #222338;
   }
 }
