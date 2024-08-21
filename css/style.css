@@ -208,7 +208,7 @@ button:focus {
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:last-child {
               border-bottom: none; }
             .header_area .navbar .nav .nav-item.submenu ul .nav-item:hover .nav-link {
-              background: #8490ff;
+              background: #6789B7;
               color: #fff; }
         @media (min-width: 992px) {
           .header_area .navbar .nav .nav-item.submenu:hover ul {
@@ -276,7 +276,7 @@ button:focus {
     .top_menu .float-left a:hover {
       color: #8490ff; }
   .top_menu .float-right .pur_btn {
-    background: #8490ff;
+    background: #6789B7;
     color: #fff;
     font-family: "Roboto", sans-serif;
     line-height: 40px;
@@ -327,7 +327,7 @@ button:focus {
 .home_banner_area {
   position: relative; /* Necessário para o pseudo-elemento */
   z-index: 1;
-  background: url(../img/background_logo.png) no-repeat center center; /* Sua imagem de fundo */
+  background: url(../img/background_logo.jpg) no-repeat center center; /* Sua imagem de fundo */
   background-size: cover;
 }
 
@@ -338,7 +338,7 @@ button:focus {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Ajuste a cor e a opacidade da sobreposição conforme necessário */
+  background: rgba(0, 0, 0, 0.4); /* Ajuste a cor e a opacidade da sobreposição conforme necessário */
   z-index: 1; /* Garante que a sobreposição fique acima da imagem de fundo */
 }
 
@@ -813,7 +813,7 @@ button:focus {
         .blog_right_sidebar .author_widget .social_icon a + a {
           margin-left: 20px; }
         .blog_right_sidebar .author_widget .social_icon a:hover {
-          color: #8490ff; }
+          color: #6789B7; }
   .blog_right_sidebar .popular_post_widget .post_item .media-body {
     justify-content: center;
     align-self: center;
@@ -825,7 +825,7 @@ button:focus {
       margin-bottom: 4px;
       transition: all 0.3s linear; }
       .blog_right_sidebar .popular_post_widget .post_item .media-body h3:hover {
-        color: #8490ff; }
+        color: #6789B7; }
     .blog_right_sidebar .popular_post_widget .post_item .media-body p {
       font-size: 12px;
       line-height: 21px;
@@ -1376,6 +1376,11 @@ button:focus {
   margin-bottom: 20px; }
 
 .mb-30 {
+  color: #222338;
+  font-size: 2.25rem;
+  font-family: 'Amiri';
+  margin-top: -4rem;
+  margin-left: 1rem;
   margin-bottom: 30px; }
 
 .sample-text-area {
@@ -1838,9 +1843,9 @@ h6 {
   cursor: not-allowed; }
 
 .generic-blockquote {
-  padding: 30px 50px 30px 30px;
+  padding: 20px 20px 20px 20px;
   background: #fff;
-  border-left: 2px solid #f8b600; }
+  border-left: 15px solid #6789B7; }
 
 @media (max-width: 991px) {
   .progress-table-wrap {
@@ -1895,7 +1900,7 @@ h6 {
   line-height: 5px; }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-1 {
-  background-color: #6382e6; }
+  background-color: #6789B7; }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-2 {
   background-color: #e66686; }
@@ -1913,7 +1918,7 @@ h6 {
   background-color: #6382e6; }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-7 {
-  background-color: #a367e7; }
+  background-color: #6789B7; }
 
 .progress-table .table-row .percentage .progress .progress-bar.color-8 {
   background-color: #e66686; }
@@ -2649,7 +2654,7 @@ h6 {
 .banner_btn {
   padding: 0px 42px;
   line-height: 50px;
-  background-image: linear-gradient(to right, #23243A 0%, #565368 48%, #8490ff 100%);
+  background-image: linear-gradient(to right, #6789B7 0%, #6789B7 48%, #8FA9CF 100%);
   background-size: 200% auto;
   color: #fff;
   display: inline-block;
@@ -2797,7 +2802,7 @@ h6 {
   .welcome_text h4 {
     color: #222222;
     font-family: "Heebo", sans-serif;
-    font-size: 36px;
+    font-size: 50px;
     margin-bottom: 18px;
     text-transform: uppercase; }
   .welcome_text p {
@@ -2833,16 +2838,19 @@ h6 {
   box-shadow: 0px 8px 30px 0px rgba(153, 153, 153, 0.1);
   padding: 50px 35px; }
   .tools_expert h3 {
-    color: #222222;
-    font-size: 21px;
-    text-transform: uppercase; }
+    color: #222338;
+    font-size: 25px;
+    text-transform: uppercase; 
+    text-align: center;
+  }
+    
   .tools_expert .skill_main .skill_item {
     margin-bottom: 18px; }
     .tools_expert .skill_main .skill_item:last-child {
       margin-bottom: 0px; }
     .tools_expert .skill_main .skill_item h4 {
       text-align: right;
-      font-size: 14px;
+      font-size: 18px;
       font-family: "Roboto", sans-serif;
       font-weight: normal;
       color: #777777;
@@ -2862,9 +2870,9 @@ h6 {
         border-radius: 5px;
         vertical-align: middle;
         align-self: center;
-        background-image: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
+        background-image: -moz-linear-gradient(0deg, #6789B7 0%, #6789B7 100%);
         background-image: -webkit-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
-        background-image: -ms-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%); }
+        background-image: -ms-linear-gradient(0deg, #6789B7 0%, #6789B7 100%); }
 
 /* End Welcome Area css
 ============================================================================================ */
@@ -3150,7 +3158,7 @@ h6 {
 /*     Footer     */
 /******************/
 footer {
-  background-color: #23243A;
+  background-color: #222338;
   color: #FFF;
   padding: 20px;
   text-align: center;
