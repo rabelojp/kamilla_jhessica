@@ -318,6 +318,8 @@ button:focus {
   #nav-item-link {
     color: #222338;
   }
+
+  
 }
 
 .case_img {
@@ -1849,7 +1851,9 @@ h6 {
 .generic-blockquote {
   padding: 20px 20px 20px 20px;
   background: #fff;
-  border-left: 15px solid #6789B7; }
+  border-left: 15px solid #6789B7; 
+  text-align: justify;
+  margin-bottom: -2rem;}
 
 @media (max-width: 991px) {
   .progress-table-wrap {
