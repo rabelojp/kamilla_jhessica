@@ -128,6 +128,21 @@ button:focus {
     color: #fff;
     opacity: .6; }
 
+    /*Serviços */
+
+    #serviços {
+      margin: 2rem;
+      margin-bottom: -3rem;
+    }
+
+    #serviços #title {
+      color: #222338;
+      padding-bottom: 2rem;
+    }
+
+    #serviços 
+    
+
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -299,6 +314,10 @@ button:focus {
     display: none;
   }
 
+  #img_facetas {
+    display: none;
+  }
+
   #title-logo {
     color: white;
   }
@@ -320,14 +339,14 @@ button:focus {
   width: 100%;
   margin: 0.4rem;
   margin-bottom: 1rem;
-  border-radius: 10px;
+  border-radius: 5px;
   margin-left: -2px;
 }
 
 .home_banner_area {
   position: relative; /* Necessário para o pseudo-elemento */
   z-index: 1;
-  background: url(../img/background_logo.jpg) no-repeat center center; /* Sua imagem de fundo */
+  background: url(../img/background_logo.webp) no-repeat center center; /* Sua imagem de fundo */
   background-size: cover;
 }
 
