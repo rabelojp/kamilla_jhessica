@@ -128,21 +128,6 @@ button:focus {
     color: #fff;
     opacity: .6; }
 
-    /*Serviços */
-
-    #serviços {
-      margin: 2rem;
-      margin-bottom: -3rem;
-    }
-
-    #serviços #title {
-      color: #222338;
-      padding-bottom: 2rem;
-    }
-
-    #serviços 
-    
-
 /* End Main Title Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
@@ -314,15 +299,15 @@ button:focus {
     display: none;
   }
 
-  #img_facetas {
-    display: none;
-  }
-
   #title-logo {
     color: white;
   }
   .nav-link {
     color: #222338;
+  }
+
+  #img_facetas {
+    display: none;
   }
 }
 
@@ -339,7 +324,7 @@ button:focus {
   width: 100%;
   margin: 0.4rem;
   margin-bottom: 1rem;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-left: -2px;
 }
 
